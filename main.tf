@@ -13,6 +13,10 @@ variable "b" {
 
 variable "c" {}
 
+variable "d" {
+  default = "4"
+}
+
 output "random" {
   value = random_string.random.result
 }
