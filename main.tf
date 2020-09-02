@@ -11,6 +11,8 @@ variable "b" {
   default = "1"
 }
 
+variable "c" {}
+
 output "random" {
   value = random_string.random.result
 }
@@ -21,5 +23,9 @@ output "a" {
 
 output "b" {
   value = var.b
+}
+
+output "c" {
+  value = var.c
 }
 
