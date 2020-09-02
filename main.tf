@@ -13,6 +13,10 @@ variable "b" {
 
 variable "c" {}
 
+variable "d" {
+  default = "3"
+}
+
 output "random" {
   value = random_string.random.result
 }
@@ -27,5 +31,9 @@ output "b" {
 
 output "c" {
   value = var.c
+}
+
+output "d" {
+  value = var.d
 }
 
